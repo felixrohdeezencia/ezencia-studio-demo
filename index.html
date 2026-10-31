@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Ezencia Studio: Stand des privaten Instagram-Studios von Ezencia, als visuelle Demo.">
+<title>Ezencia Studio · Demo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;650&display=swap">
+<style>
+/* One column of screens, each with a short caption: a tour, not a dashboard. */
+:root{--bg:#F2F3F1;--paper:#fff;--ink:#0E1A24;--ink2:#44525E;--line:#D3D8DB;--sea:#0B4A6F;--font:"Geist",ui-sans-serif,system-ui,-apple-system,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1420;--paper:#122030;--ink:#E7EAE8;--ink2:#A7B3BC;--line:#22323F;--sea:#8DBBD3;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B1420;--paper:#122030;--ink:#E7EAE8;--ink2:#A7B3BC;--line:#22323F;--sea:#8DBBD3;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--font);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:1180px;margin:0 auto;padding-block:48px 72px;display:grid;gap:56px}
+header{display:grid;gap:12px;max-width:62ch}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.08;margin:0;font-weight:650;letter-spacing:-.02em;text-wrap:balance}
+h1 span{font-weight:300}
+.lede{margin:0;color:var(--ink2);font-size:17px}
+.status{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 0;padding:0;list-style:none}
+.status li{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;color:var(--ink2)}
+.status li.on{border-color:var(--sea);color:var(--sea)}
+nav{display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);padding-top:16px}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:14px;padding:6px 14px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+nav a:hover,nav a:focus-visible{border-color:var(--sea);color:var(--sea);outline:none}
+section{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:32px;align-items:start;border-top:1px solid var(--line);padding-top:24px;scroll-margin-top:16px}
+.copy{display:grid;gap:10px;min-width:0}
+.n{font-size:13px;font-weight:600;color:var(--ink2);font-variant-numeric:tabular-nums}
+h2{margin:0;font-size:24px;font-weight:620;letter-spacing:-.01em;line-height:1.2}
+.copy p{margin:0;color:var(--ink2)}
+.copy ul{margin:0;padding-left:18px;color:var(--ink);display:grid;gap:6px;font-size:15px}
+.copy .path{font-size:13px;color:var(--ink2)}
+.copy code{font-size:13px;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:0 5px}
+figure{margin:0;min-width:0}
+figure img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line);background:var(--paper)}
+footer{border-top:1px solid var(--line);padding-top:24px;display:grid;gap:10px;max-width:70ch}
+footer h2{font-size:20px}
+footer ol{margin:0;padding-left:20px;display:grid;gap:6px;color:var(--ink2)}
+footer b{color:var(--ink);font-weight:600}
+@media (max-width:820px){section{grid-template-columns:minmax(0,1fr);gap:16px}main{padding-block:28px 48px;gap:40px}}
+.note{font-size:14px;color:var(--ink2);border-left:2px solid var(--sea);padding:2px 0 2px 12px;max-width:70ch}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Ezencia Studio. <span>Der Stand.</span></h1>
+  <p class="lede">Ein privates Instagram-Studio für Ezencia und bis zu zehn Kundenaccounts. Tiefe und Tempo: Die KI entwirft, Felix entscheidet, der Kunde gibt per WhatsApp frei. Ziel sind Ergebnisse: Views, Follower, Anfragen und Leads.</p>
+  <ul class="status" aria-label="Stand">
+    <li class="on">7 Screens</li><li class="on">Datenbank speichert</li><li class="on">WhatsApp-Freigabe läuft</li><li class="on">Prüfregeln vor dem Freigeben</li><li>Claude-Gehirn gebaut, wartet auf API-Key</li><li>Instagram vorbereitet, wartet auf Meta</li>
+  </ul>
+  <p class="note">Demo mit Beispieldaten. Kundennamen sind anonymisiert, alle Posts und Zahlen erfunden. Stand 31. Oktober 2026.</p>
+</header>
+<nav aria-label="Screens"><a href="#today">Today</a><a href="#account">Account-Welt</a><a href="#week">Week</a><a href="#results">Results</a><a href="#lab">Hook lab</a><a href="#client">Neuer Kunde</a><a href="#setup">Setup</a></nav>
+<section id="today"><div class="copy"><span class="n">1 von 7</span><h2>Today</h2>
+<p>Der Morgen in einem Satz: was heute eine Entscheidung braucht und was von allein läuft.</p>
+<ul><li>Warteschlange: geht heute live, Kunde hat geantwortet, diese Woche</li><li>Reel-Vorschau so, wie ein Follower sie sieht</li><li>Hook-Varianten, Begründung, Caption</li><li>Prüfung vor dem Freigeben: Instagram-Limits, Kommentar-Keyword, Sprache</li><li>„Send to client“ öffnet WhatsApp mit fertiger Nachricht in der Sprache des Kunden</li><li>Ein Block für die eine Entscheidung, auch per Tastatur</li></ul></div>
+<figure><img loading="lazy" alt="Today mit Warteschlange, Reel-Vorschau, Prüfungen und Entscheidungsblock" src="img/today.jpg" width="1440" height="900"></figure></section>
+<section id="account"><div class="copy"><span class="n">2 von 7</span><h2>Account-Welt</h2>
+<p>Jeder Kunde als eigene Geschichte, hier eine Physiotherapie-Praxis.</p>
+<ul><li>Profil-Raster der nächsten zwei Wochen mit Status</li><li>Tabs: Raster, Medien, Hook-Tests, Essenz</li><li>Vorher/Nachher seit Ezencia</li><li>Das Account-Gehirn: Claude schreibt aus Essenz und Ergebnissen neue Entwürfe</li></ul></div>
+<figure><img loading="lazy" alt="Account-Welt mit Profil-Raster und Seitenpanel" src="img/account.jpg" width="1440" height="900"></figure></section>
+<section id="week"><div class="copy"><span class="n">3 von 7</span><h2>Week</h2>
+<p>Alle Accounts als Bahnen über die Woche. Lücken springen ins Auge.</p>
+<ul><li>Wer liegt unter seinem Rhythmus, wer ist im Takt</li><li>Freigegebene Posts ohne Termin warten in der Ablage</li><li>Antippen und platzieren oder ziehen, mit Rückgängig</li><li>Geplante Posts verschieben</li></ul></div>
+<figure><img loading="lazy" alt="Wochenansicht mit Account-Bahnen und Ablage" src="img/week.jpg" width="1440" height="900"></figure></section>
+<section id="results"><div class="copy"><span class="n">4 von 7</span><h2>Results</h2>
+<p>Was wirkt. Davon mehr.</p>
+<ul><li>Trichter: Views, Profilbesuche, Follows, DMs, WhatsApp-Leads</li><li>Letzte vier Wochen gegen die vier Wochen vor Ezencia</li><li>Welche Posts es getragen haben, sortierbar</li><li>„More like this“ schickt den Auftrag ans Account-Gehirn</li></ul></div>
+<figure><img loading="lazy" alt="Results mit Trichter und Post-Tabelle" src="img/results.jpg" width="1440" height="900"></figure></section>
+<section id="lab"><div class="copy"><span class="n">5 von 7</span><h2>Hook lab</h2>
+<p>Die Kurven entscheiden, nicht der Geschmack.</p>
+<ul><li>Laufende Tests mit zwei oder drei Hook-Varianten</li><li>Haltekurve der ersten zehn Sekunden je Variante</li><li>Gewinner erst, wenn genug Views da sind</li><li>Bestenliste aller Hooks der letzten 30 Tage</li></ul></div>
+<figure><img loading="lazy" alt="Hook lab mit Varianten-Duell und Bestenliste" src="img/lab.jpg" width="1440" height="900"></figure></section>
+<section id="client"><div class="copy"><span class="n">6 von 7</span><h2>Neuer Kunde</h2>
+<p>Ein Kunde ist in wenigen Minuten im Studio.</p>
+<ul><li>Name, Instagram-Handle, Sprache, Rhythmus</li><li>WhatsApp-Nummer und Kommentar-Keyword</li><li>Essenz, Geschichte, Stimme und Regeln, Angebote, Zielgruppe, Ziel</li><li>Daraus schreibt das Gehirn jeden Entwurf</li></ul></div>
+<figure><img loading="lazy" alt="Formular für einen neuen Kunden" src="img/client.jpg" width="1440" height="900"></figure></section>
+<section id="setup"><div class="copy"><span class="n">7 von 7</span><h2>Setup</h2>
+<p>Was läuft, was fehlt und was es braucht.</p>
+<ul><li>Claude: API-Key eintragen, dann schreibt jedes Account-Gehirn echte Entwürfe</li><li>WhatsApp: läuft, mit Liste der Kunden ohne Nummer</li><li>Instagram: die vier Schritte bis zur Meta-Freigabe</li><li>Beispieldaten mit einem Klick entfernen</li></ul></div>
+<figure><img loading="lazy" alt="Setup mit dem Status der drei Verbindungen" src="img/setup.jpg" width="1440" height="900"></figure></section>
+<footer><h2>Was als Nächstes kommt</h2>
+<ol><li><b>Claude anschließen.</b> Jedes Account-Gehirn schreibt echte Entwürfe, die direkt in Today landen.</li><li><b>Meta-App zur Prüfung geben.</b> Veröffentlichen und echte Zahlen sind vorbereitet und werden nach der Freigabe angeschlossen.</li><li><b>Die ersten Kunden ins Studio holen</b> und die Beispieldaten entfernen.</li></ol>
+<p class="lede">Ezencia · Tiefe und Tempo · Tabaiba, Tenerife</p></footer>
+</main>
+</body>
+</html>
