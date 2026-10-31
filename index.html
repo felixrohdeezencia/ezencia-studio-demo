@@ -40,6 +40,8 @@ footer h2{font-size:20px}
 footer ol{margin:0;padding-left:20px;display:grid;gap:6px;color:var(--ink2)}
 footer b{color:var(--ink);font-weight:600}
 @media (max-width:820px){section{grid-template-columns:minmax(0,1fr);gap:16px}main{padding-block:28px 48px;gap:40px}}
+.phones{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:620px}
+.phones img{border-radius:22px}
 .note{font-size:14px;color:var(--ink2);border-left:2px solid var(--sea);padding:2px 0 2px 12px;max-width:70ch}
 </style>
 </head>
@@ -49,11 +51,21 @@ footer b{color:var(--ink);font-weight:600}
   <h1>Ezencia Studio. <span>Der Stand.</span></h1>
   <p class="lede">Ein privates Instagram-Studio für Ezencia und bis zu zehn Kundenaccounts. Tiefe und Tempo: Die KI entwirft, Felix entscheidet, der Kunde gibt per WhatsApp frei. Ziel sind Ergebnisse: Views, Follower, Anfragen und Leads.</p>
   <ul class="status" aria-label="Stand">
-    <li class="on">7 Screens</li><li class="on">Datenbank speichert</li><li class="on">WhatsApp-Freigabe läuft</li><li class="on">Prüfregeln vor dem Freigeben</li><li>Claude-Gehirn gebaut, wartet auf API-Key</li><li>Instagram vorbereitet, wartet auf Meta</li>
+    <li class="on">9 Screens</li><li class="on">Story-Onboarding für Kunden</li><li class="on">Datenbank speichert</li><li class="on">WhatsApp-Freigabe läuft</li><li class="on">Prüfregeln vor dem Freigeben</li><li>Claude-Gehirn gebaut, wartet auf API-Key</li><li>Instagram vorbereitet, wartet auf Meta</li>
   </ul>
   <p class="note">Demo mit Beispieldaten. Kundennamen sind anonymisiert, alle Posts und Zahlen erfunden. Stand 31. Oktober 2026.</p>
 </header>
-<nav aria-label="Screens"><a href="#today">Today</a><a href="#account">Account-Welt</a><a href="#week">Week</a><a href="#results">Results</a><a href="#lab">Hook lab</a><a href="#client">Neuer Kunde</a><a href="#setup">Setup</a></nav>
+<nav aria-label="Screens"><a href="#story">Story-Onboarding</a><a href="#today">Today</a><a href="#account">Account-Welt</a><a href="#week">Week</a><a href="#results">Results</a><a href="#lab">Hook lab</a><a href="#client">Neuer Kunde</a><a href="#setup">Setup</a></nav>
+<section id="story"><div class="copy"><span class="n">Neu</span><h2>Story-Onboarding</h2>
+<p>Der Kunde bekommt einen Link per WhatsApp und erzählt seine Geschichte auf dem Handy, in seiner Sprache, ohne Login.</p>
+<ul><li>Aufgebaut wie jeder Film: ein normaler Tag, der Absturz und wie oft, die Wende, was er gelernt hat, was er heute tut, für wen</li><li>Erst ein Satz pro Kapitel in etwa zehn Minuten, später Kapitel für Kapitel in die Tiefe</li><li>Bei jeder Antwort entscheidet der Kunde: „darf erzählt werden“ oder „nur für Felix“</li><li>Die Story-Kurve zeigt, wo er gerade steht</li><li>Speichert sich beim Tippen, Spanisch, Deutsch (Sie) und Englisch</li></ul></div>
+<figure class="phones"><img loading="lazy" alt="Story-Onboarding auf dem Handy: Willkommen mit der Story-Kurve" src="img/story-phone-welcome.jpg" width="750" height="1624"><img loading="lazy" alt="Story-Onboarding auf dem Handy: Kapitel 'Lo que salió mal' mit Einwilligung pro Antwort" src="img/story-phone-chapter.jpg" width="750" height="1624"></figure></section>
+
+<section id="story-tab"><div class="copy"><span class="n">Neu</span><h2>Story im Studio</h2>
+<p>Felix liest die Geschichte Kapitel für Kapitel, versioniert und mit jeder Änderung.</p>
+<ul><li>Standardisierte Vorlage, Version 1.0, Runde für Runde weiterentwickelt</li><li>Jede Einsendung wird eine Version, frühere Fassungen bleiben sichtbar</li><li>„Ask for more“: eigene Fragen in eine neue Runde, sie landen im passenden Kapitel</li><li>Das Account-Gehirn schreibt aus der Geschichte; Privates nutzt es nur als Hintergrund</li></ul></div>
+<figure><img loading="lazy" alt="Story-Tab im Studio mit Story-Kurve, Versionen und offener Frage" src="img/story-tab.jpg" width="1440" height="1450"></figure></section>
+
 <section id="today"><div class="copy"><span class="n">1 von 7</span><h2>Today</h2>
 <p>Der Morgen in einem Satz: was heute eine Entscheidung braucht und was von allein läuft.</p>
 <ul><li>Warteschlange: geht heute live, Kunde hat geantwortet, diese Woche</li><li>Reel-Vorschau so, wie ein Follower sie sieht</li><li>Hook-Varianten, Begründung, Caption</li><li>Prüfung vor dem Freigeben: Instagram-Limits, Kommentar-Keyword, Sprache</li><li>„Send to client“ öffnet WhatsApp mit fertiger Nachricht in der Sprache des Kunden</li><li>Ein Block für die eine Entscheidung, auch per Tastatur</li></ul></div>
